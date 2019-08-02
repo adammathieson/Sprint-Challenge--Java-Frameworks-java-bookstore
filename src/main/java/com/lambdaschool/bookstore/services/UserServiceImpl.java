@@ -1,11 +1,11 @@
 package com.lambdaschool.bookstore.services;
 
-import com.lambdaschool.starthere.exceptions.ResourceNotFoundException;
-import com.lambdaschool.starthere.models.Quote;
-import com.lambdaschool.starthere.models.User;
-import com.lambdaschool.starthere.models.UserRoles;
-import com.lambdaschool.starthere.repository.RoleRepository;
-import com.lambdaschool.starthere.repository.UserRepository;
+import com.lambdaschool.bookstore.exceptions.ResourceNotFoundException;
+import com.lambdaschool.bookstore.models.Quote;
+import com.lambdaschool.bookstore.models.User;
+import com.lambdaschool.bookstore.models.UserRoles;
+import com.lambdaschool.bookstore.repository.RoleRepository;
+import com.lambdaschool.bookstore.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

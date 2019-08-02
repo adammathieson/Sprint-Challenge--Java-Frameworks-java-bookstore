@@ -1,7 +1,7 @@
 package com.lambdaschool.bookstore.models;
 
 
-import com.lambdaschool.starthere.exceptions.ValidationError;
+import com.lambdaschool.bookstore.exceptions.ValidationError;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package com.lambdaschool.bookstore.controllers;
 
-import com.lambdaschool.starthere.models.User;
-import com.lambdaschool.starthere.services.UserService;
+import com.lambdaschool.bookstore.models.User;
+import com.lambdaschool.bookstore.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

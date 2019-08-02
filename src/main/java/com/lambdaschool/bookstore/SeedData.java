@@ -1,11 +1,11 @@
 package com.lambdaschool.bookstore;
 
-import com.lambdaschool.starthere.models.Quote;
-import com.lambdaschool.starthere.models.Role;
-import com.lambdaschool.starthere.models.User;
-import com.lambdaschool.starthere.models.UserRoles;
-import com.lambdaschool.starthere.services.RoleService;
-import com.lambdaschool.starthere.services.UserService;
+import com.lambdaschool.bookstore.models.Quote;
+import com.lambdaschool.bookstore.models.Role;
+import com.lambdaschool.bookstore.models.User;
+import com.lambdaschool.bookstore.models.UserRoles;
+import com.lambdaschool.bookstore.services.RoleService;
+import com.lambdaschool.bookstore.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

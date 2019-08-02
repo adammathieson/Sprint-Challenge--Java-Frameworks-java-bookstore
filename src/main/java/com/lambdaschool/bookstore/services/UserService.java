@@ -1,6 +1,6 @@
 package com.lambdaschool.bookstore.services;
 
-import com.lambdaschool.starthere.models.User;
+import com.lambdaschool.bookstore.models.User;
 
 import java.util.List;
 
