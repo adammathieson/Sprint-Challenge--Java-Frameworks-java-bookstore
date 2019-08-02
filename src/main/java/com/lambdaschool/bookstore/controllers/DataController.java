@@ -1,5 +1,6 @@
 package com.lambdaschool.bookstore.controllers;
 
+import com.lambdaschool.bookstore.models.Author;
 import com.lambdaschool.bookstore.models.Book;
 import com.lambdaschool.bookstore.models.ErrorDetail;
 import com.lambdaschool.bookstore.services.AuthorService;
@@ -25,6 +26,7 @@ public class DataController
     @Autowired
     private AuthorService authorService;
 
+    // UpdateBook =====================================
     @ApiOperation(value = "Udates a books info", consumes = "Book", response = void.class)
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Book Successfully Updated", response = void.class),
@@ -36,5 +38,18 @@ public class DataController
     {
         bookService.update(book, id);
         return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    // assignBookAuthor =======================================
+    @PostMapping(value = "/books/{bookid}/authors/{authorid}")
+    public ResponseEntity<?> assignBookAuthor(@PathVariable long bookid, @PathVariable long authorid)
+    {
+        Book book = bookService.findBookById(bookid);
+        Author author = authorService.findAuthorById(authorid);
+
+        book.getAuthors().add(author);
+        Book b = bookService.save(book);
+
+        return new ResponseEntity<>(b, HttpStatus.CREATED);
     }
 }
