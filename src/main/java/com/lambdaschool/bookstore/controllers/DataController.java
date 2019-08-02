@@ -52,4 +52,16 @@ public class DataController
 
         return new ResponseEntity<>(b, HttpStatus.CREATED);
     }
+
+    @ApiOperation(value = "Delete Book")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Book deleted", response = void.class),
+            @ApiResponse(code=404,message="Book Not Found", response = ErrorDetail.class)
+    })
+    @DeleteMapping("/books/{id}")
+    public ResponseEntity<?> deleteBook(@PathVariable long id)
+    {
+        bookService.delete(id);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
 }
