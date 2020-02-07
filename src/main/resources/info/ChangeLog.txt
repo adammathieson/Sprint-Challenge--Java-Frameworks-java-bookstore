@@ -1,0 +1,21 @@
+Starting June 20, 2019
+
+* Remove generation of refresh token for oauth2
+* Reading Client Id and Secret from environment variables
+* Changed EntityNotFoundException to ResourceNotFoundException
+
+June 23
+
+* Added Access to OpenLibrary API
+
+July 24
+
+* Configured H2 / PostgreSQL to use environment variables
+* Configured an application.properties switch to change DBs
+* mapped /oauth/token to /login
+
+Todo
+
+Custom Swagger
+Testing
+
